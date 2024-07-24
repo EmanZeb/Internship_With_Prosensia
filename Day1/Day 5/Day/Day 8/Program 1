@@ -1,0 +1,85 @@
+def print_greeting():
+    print("Hello, World")
+print_greeting()
+
+#Program 2
+def max_value(s):
+    s = s.replace(" ", "").upper()
+    return max(s)
+result = max_value("Hello World")
+print(result)
+
+#Program 3
+def convert_to_float(n):
+    return float(n)
+result = convert_to_float(42)
+print(result)
+
+#Program 4
+def add_numbers(a, b):
+    return a + b
+result = add_numbers(10, 20)
+print(result)
+
+#Program 5
+def greet(language_code):
+    if language_code == 'en':
+        print("Hello")
+    elif language_code == 'es':
+        print("Hola")
+    elif language_code == 'fr':
+        print("Bonjour")
+    else:
+        print("Unknown language code")
+greet('en')
+greet('es')
+greet('fr')
+greet('de')
+
+#Program 6
+def compute_pay(hours_worked, hourly_rate):
+    overtime_threshold = 40
+    if hours_worked <= overtime_threshold:
+        return hours_worked * hourly_rate
+    else:
+        overtime_hours = hours_worked - overtime_threshold
+        regular_pay = overtime_threshold * hourly_rate
+        overtime_pay = overtime_hours * hourly_rate * 1.5
+        return regular_pay + overtime_pay
+pay = compute_pay(45, 10)
+print(pay)
+
+#Program 7
+def is_integer(s):
+    try:
+        int(s)
+        return True
+    except ValueError:
+        return False
+print(is_integer("123"))  
+print(is_integer("hello"))  
+
+#Program 8
+def print_lyrics():
+    lyrics = """
+    Twinkle, twinkle, little star,
+    How I wonder what you are!
+    Up above the world so high,
+    Like a diamond in the sky.
+    Twinkle, twinkle, little star,
+    How I wonder what you are!
+    """
+    print(lyrics)
+
+
+#Program 9
+def multiply_numbers(a, b):
+    return a * b
+result = multiply_numbers(7, 8)
+print(result)
+
+#Program 10
+def calculate_expression():
+    return 1 + 2 * float(3) / 4 - 5
+result = calculate_expression()
+print(result)
