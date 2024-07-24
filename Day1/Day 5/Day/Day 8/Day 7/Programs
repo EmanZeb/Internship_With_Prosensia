@@ -1,0 +1,114 @@
+def check_number():
+    number = int(input("Enter an integer: "))
+    if number > 0:
+        print("Positive")
+    elif number < 0:
+        print("Negative")
+    else:
+        print("Zero")
+
+check_number()
+
+#Program 2
+x = 5
+if x > 2:
+    print('Bigger than 2')
+    print('Still bigger')
+else:
+    print("Number is too small")
+print('Done with 2')
+
+#Program 3
+x = 5
+if x > 2:
+    print('Bigger than 2')
+    print('Still bigger')
+print('Done with 2')
+
+#Program 4
+def check_range(number):
+    if 10 <= number <= 20:
+        print("Within range")
+    else:
+        print("Out of range")
+
+number = int(input("Enter an integer: "))
+check_range(number)
+
+#Program 5
+x = 4
+if x > 2:
+    print('Bigger')
+elif x == 2:
+    print("Equal")
+else:
+    print('Smaller')
+print('All done')
+
+#Program 6
+def categorize_number():
+    number = int(input("Enter an integer: "))
+    if number < 10:
+        print("Small")
+    elif 10 <= number <= 20:
+        print("Medium")
+    else:
+        print("Large")
+
+categorize_number()
+
+#Program 7
+rawstr = input('Enter a number: ')
+try:
+    ival = int(rawstr)
+    if ival > 0:
+        print('Nice work')
+    else:
+        print('Not a number')
+except ValueError:
+    print('Not a number')
+
+    #Program 8
+    def compute_gross_pay(hours, rate):
+    overtime_threshold = 40
+    if hours > overtime_threshold:
+        overtime_hours = hours - overtime_threshold
+        overtime_pay = overtime_hours * rate * 1.5
+        regular_pay = overtime_threshold * rate
+        total_pay = regular_pay + overtime_pay
+    else:
+total_pay = hours * rate
+    return total_pay
+
+hours_worked = float(input("Enter hours worked: "))
+hourly_rate = float(input("Enter hourly rate: "))
+gross_pay = compute_gross_pay(hours_worked, hourly_rate)
+print(f"Gross pay: {gross_pay}")
+
+#Program 9
+def check_positivity(a, b):
+    if a > 0 and b > 0:
+        print("Both are positive")
+    elif a > 0 or b > 0:
+        print("One is positive")
+    else:
+        print("None are positive")
+
+number1 = int(input("Enter the first number: "))
+number2 = int(input("Enter the second number: "))
+check_positivity(number1, number2)
+
+#Program 10
+def check_number_type(number):
+    if number > 0:
+        if number % 2 == 0:
+            print("Positive and even")
+        else:
+            print("Positive but odd")
+    elif number < 0:
+        print("Negative")
+    else:
+        print("Zero")
+
+num = int(input("Enter a number: "))
+check_number_type(num)
