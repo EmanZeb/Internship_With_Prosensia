@@ -1,0 +1,63 @@
+def concatenate(str1, str2):
+    concatenated = str1 + str2
+    if concatenated.isdigit():
+        return int(concatenated)
+    else:
+        return concatenated
+
+#Program 2
+def index(s, index):
+    if index < 0 or index >= len(s):
+        return "Index out of bounds"
+    return s[index]
+
+#Program 3
+def lengths(strings):
+    return [len(s) for s in strings]
+
+#Program 4
+def charactersIndex(s):
+    for index, char in enumerate(s):
+        print(f"{index}: {char}")
+
+#Program 5
+def count(s, char):
+    return s.count(char)
+
+#Program 6
+def substringWithIndices(s, start, end):
+    if start < 0:
+        start = 0
+    if end > len(s):
+        end = len(s)
+    return s[start:end]
+
+#Program 7
+def compareStrings(s1, s2):
+    if s1 < s2:
+        return "First string comes before the second string"
+    elif s1 > s2:
+        return "First string comes after the second string"
+    else:
+        return "Both strings are equal"
+    
+#Program 8
+def strings(s):
+    return {
+        "lowercase": s.lower(),
+        "uppercase": s.upper(),
+        "titlecase": s.title()
+    }
+
+#Program 9
+def search_replace(s, search_term, replacement_term):
+    return s.replace(search_term, replacement_term)
+
+#Program 10
+def remove_whitespace(s):
+    return ' '.join(s.split())
+
+
+
+
+
